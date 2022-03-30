@@ -1,0 +1,26 @@
+### Home route
+GET http://localhost:8080
+
+### Friends List
+GET http://localhost:8080/friends/all
+
+### Friends 1 Detail
+GET http://localhost:8080/friends/1
+
+### Friends 2 Detail
+GET http://localhost:8080/friends/2
+
+### Add new friend
+
+POST http://localhost:8080/friends/add
+content-type: application/json
+
+{
+    "email": "new@new.com",
+    "display_name": "new",
+    "phone": "77777777"
+}
+
+### Delete friend
+
+DELETE http://localhost:8080/friends/2
